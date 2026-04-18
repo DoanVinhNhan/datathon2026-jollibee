@@ -1,0 +1,43 @@
+Khám phá bộ dữ liệu để tìm ra các insight có ý nghĩa kinh doanh. Phần này được đánh
+giá dựa trên tính sáng tạo, chiều sâu phân tích và chất lượng trình bày. Không có
+đáp án đúng duy nhất — ban giám khảo đánh giá khả năng kể chuyện bằng dữ liệu (data
+storytelling) của các đội.
+▶ Yêu cầu
+Các đội thi tự do lựa chọn góc nhìn phân tích từ bộ dữ liệu. Bài nộp cần bao gồm hai thành
+phần:
+1. Trực quan hoá (Visualizations): Tạo các biểu đồ, đồ thị, bản đồ hoặc dashboard trực
+quan để thể hiện các pattern, xu hướng và mối quan hệ trong dữ liệu. Mỗi hình ảnh cần
+có tiêu đề, nhãn trục rõ ràng và chú thích phù hợp.
+2. Phân tích (Analysis): Viết phần giải thích đi kèm mỗi trực quan hoá, bao gồm:
+• Mô tả những gì biểu đồ thể hiện và tại sao góc nhìn này quan trọng
+• Các phát hiện chính (key findings) được hỗ trợ bởi số liệu cụ thể
+
+• Ý nghĩa kinh doanh (business implications) hoặc đề xuất hành động (actionable rec-
+ommendations)
+
+Tiêu chí đánh giá Phần 2: Bài nộp được đánh giá theo bốn cấp độ phân tích. Cấp độ
+cao hơn bao gồm và nâng cao cấp độ thấp hơn.
+Cấp độ Câu hỏi Ban giám khảo đánh giá
+Descriptive What happened? Thống kê tổng hợp chính xác, biểu đồ có
+nhãn rõ ràng, tổng hợp dữ liệu đúng
+
+Diagnostic Why did it hap-
+pen?
+
+Giả thuyết nhân quả, so sánh phân khúc,
+xác định bất thường có bằng chứng hỗ trợ
+
+Predictive What is likely to
+
+happen?
+
+Ngoại suy xu hướng, phân tích tính mùa
+vụ, phân tích chỉ số dẫn xuất
+
+Prescriptive What should we
+
+do?
+
+Đề xuất hành động kinh doanh được hỗ
+trợ bởi dữ liệu; đánh đổi được định lượng
+Các đội đạt cấp độ Prescriptive nhất quán trên nhiều phân tích sẽ đạt điểm cao nhất.

@@ -1,0 +1,120 @@
+========== customers.csv ==========
+   customer_id    zip       city signup_date  gender age_group acquisition_channel
+0            1  15201  Hai Phong  2021-12-30  Female     35-44        social_media
+1            2  15201  Hai Phong  2013-12-27  Female     45-54      email_campaign
+2            3  15201  Hai Phong  2018-07-24  Female     18-24      organic_search
+3            4  15201  Hai Phong  2017-11-29    Male     35-44            referral
+4            5  15201  Hai Phong  2022-09-23    Male       55+      organic_search
+
+========== geography.csv ==========
+     zip       city region      district
+0  15201  Hai Phong   East  District #13
+1  15202     Phu Ly   East  District #13
+2  15203   Viet Tri   East  District #13
+3  15204  Bac Giang   East  District #13
+4  15205  Bac Giang   East  District #13
+
+========== inventory.csv ==========
+  snapshot_date  product_id  stock_on_hand  units_received  units_sold  stockout_days  days_of_supply  fill_rate  stockout_flag  overstock_flag  reorder_flag  sell_through_rate      product_name category      segment  year  month
+0    2022-10-31           1              3               1           1              2            90.0     0.9333              1               0             0             0.2500  DragonWear MA-01   Casual  All-weather  2022     10
+1    2022-11-30           1              3               1           1              1            90.0     0.9667              1               0             0             0.2500  DragonWear MA-01   Casual  All-weather  2022     11
+2    2022-12-31           1              3               1           1              1            90.0     0.9667              1               0             0             0.2500  DragonWear MA-01   Casual  All-weather  2022     12
+3    2016-04-30           3             35              13          11              2            95.5     0.9333              1               1             0             0.2391  DragonWear MA-03   Casual  All-weather  2016      4
+4    2016-05-31           3             36              11          10              1           108.0     0.9667              1               1             0             0.2174  DragonWear MA-03   Casual  All-weather  2016      5
+
+========== order_items.csv ==========
+   order_id  product_id  quantity  unit_price  discount_amount  promo_id  promo_id_2
+0         1        2400         7     1138.22              0.0       NaN         NaN
+1         2         609         7    10166.25              0.0       NaN         NaN
+2         3         396         3    11220.33              0.0       NaN         NaN
+3         4         635         5    10639.25              0.0       NaN         NaN
+4         6        1935         1     1597.84              0.0       NaN         NaN
+
+========== orders.csv ==========
+   order_id  order_date  customer_id   zip order_status payment_method device_type    order_source
+0         1  2012-07-04        58578  1109    delivered    credit_card     desktop     paid_search
+1         2  2012-07-04        58621  1330     returned            cod      mobile     paid_search
+2         3  2012-07-04        58811  1473    delivered    credit_card     desktop          direct
+3         4  2012-07-04        59453  2360    delivered    credit_card     desktop        referral
+4         6  2012-07-06        57821  2886    delivered         paypal      mobile  email_campaign
+
+========== payments.csv ==========
+   order_id payment_method  payment_value  installments
+0         1    credit_card        7967.54             3
+1         2            cod       71163.75             1
+2         3    credit_card       33660.99             3
+3         4    credit_card       53196.25             3
+4         6         paypal        1597.84             1
+
+========== products.csv ==========
+   product_id      product_name    category   segment size   color         price          cogs
+0         536  SaigonFlex UC-01  Streetwear  Everyday    S   green  11059.650000   9704.842875
+1         537  SaigonFlex UC-02  Streetwear  Everyday    M  silver   9523.076013   5393.870254
+2         538  SaigonFlex UC-03  Streetwear  Everyday    L    pink  15951.633158  11371.919278
+3         539  SaigonFlex UC-04  Streetwear  Everyday   XL  yellow  15753.717299   8573.172954
+4         540  SaigonFlex UC-05  Streetwear  Everyday    S     red  15766.334536  14063.570406
+
+========== promotions.csv ==========
+     promo_id          promo_name  promo_type  discount_value  start_date    end_date applicable_category promo_channel  stackable_flag  min_order_value
+0  PROMO-0001    Spring Sale 2013  percentage            12.0  2013-03-18  2013-04-17                 NaN         email               1                0
+1  PROMO-0002  Mid-Year Sale 2013  percentage            18.0  2013-06-23  2013-07-22                 NaN        online               0                0
+2  PROMO-0003    Fall Launch 2013  percentage            10.0  2013-08-30  2013-10-02                 NaN         email               0                0
+3  PROMO-0004  Year-End Sale 2013  percentage            20.0  2013-11-18  2014-01-02                 NaN  all_channels               0            50000
+4  PROMO-0005  Urban Blowout 2013       fixed            50.0  2013-07-30  2013-09-02          Streetwear        online               0           150000
+
+========== returns.csv ==========
+    return_id  order_id  product_id return_date  return_reason  return_quantity  refund_amount
+0  RET-000001         2         609  2012-07-25  late_delivery                6       52458.01
+1  RET-000002        32        1862  2012-07-16     wrong_size                2        5141.37
+2  RET-000003        35        2359  2012-07-16     wrong_size                1        5315.95
+3  RET-000004        47        1449  2012-07-11     wrong_size                4        6493.75
+4  RET-000005        47        1450  2012-07-25     wrong_size                1        1740.76
+
+========== reviews.csv ==========
+     review_id  order_id  product_id  customer_id review_date  rating      review_title
+0  REV-0000001         1        2400        58578  2012-07-24       5  Highly recommend
+1  REV-0000002         3         396        58811  2012-08-03       5    Very satisfied
+2  REV-0000003        10        1431        49101  2012-07-23       5     Great quality
+3  REV-0000005        16        1668        41028  2012-08-05       5     Great quality
+4  REV-0000006        17        2352        42030  2012-07-17       4      Good overall
+
+========== sales.csv ==========
+         Date     Revenue        COGS
+0  2012-07-04  5123547.94  3982991.19
+1  2012-07-05  2751773.45  2150580.23
+2  2012-07-06  3054029.42  2517632.84
+3  2012-07-07  2667930.94  2108246.62
+4  2012-07-08  2360851.90  1808622.79
+
+========== sample_submission.csv ==========
+         Date     Revenue        COGS
+0  2023-01-01  2665507.20  2518885.15
+1  2023-01-02  1280007.89  1136463.00
+2  2023-01-03  1015899.51   822721.12
+3  2023-01-04  1142997.27   914554.18
+4  2023-01-05  1236312.34   984390.24
+
+========== shipments.csv ==========
+   order_id   ship_date delivery_date  shipping_fee
+0         1  2012-07-07    2012-07-11          1.37
+1         2  2012-07-06    2012-07-10          2.60
+2         3  2012-07-04    2012-07-07          2.38
+3         4  2012-07-05    2012-07-11          2.49
+4         6  2012-07-09    2012-07-16         25.79
+
+========== submission.csv ==========
+         Date     Revenue        COGS
+0  2023-01-01  2665507.20  2518885.15
+1  2023-01-02  1280007.89  1136463.00
+2  2023-01-03  1015899.51   822721.12
+3  2023-01-04  1142997.27   914554.18
+4  2023-01-05  1236312.34   984390.24
+
+========== web_traffic.csv ==========
+         date  sessions  unique_visitors  page_views  bounce_rate  avg_session_duration_sec  traffic_source
+0  2013-01-01      9760             7253       39093      0.00514                     102.9  organic_search
+1  2013-01-02     10456             8151       47611      0.00406                     120.5  organic_search
+2  2013-01-03     10076             7458       36963      0.00401                     263.6          direct
+3  2013-01-04      9973             8063       53078      0.00562                     151.8          direct
+4  2013-01-05     10223             7882       36790      0.00525                     168.6        referral
+
